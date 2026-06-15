@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mealory サポート</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="support-page">
+    <section class="support-card" aria-labelledby="support-title">
+      <p class="brand-label">Mealory</p>
+      <h1 id="support-title">Mealory サポート</h1>
+
+      <!-- ページ説明文を変更する場合は、下記の文言を編集してください。 -->
+      <p class="lead">
+        アプリに関する不具合、ご意見、ご要望、その他のお問い合わせはこちらからご連絡ください。
+      </p>
+
+      <!--
+        お問い合わせ先メールアドレスを変更する場合は、
+        下記 form の action と、直接メール用リンクの mailto を編集してください。
+        現在の送信先: mealory.contact@gmail.com
+      -->
+      <form
+        class="contact-form"
+        action="mailto:mealory.contact@gmail.com?subject=Mealory%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="form-field">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="お名前" autocomplete="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="メールアドレス" autocomplete="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="お問い合わせ内容" rows="7" required></textarea>
+        </div>
+
+        <button type="submit">送信する</button>
+      </form>
+
+      <!-- 対応目安の文言を変更する場合は、下記を編集してください。 -->
+      <p class="note">通常、数日以内に確認いたします。</p>
+
+      <p class="direct-mail">
+        メールで直接お問い合わせいただく場合：
+        <a href="mailto:mealory.contact@gmail.com?subject=Mealory%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+          mealory.contact@gmail.com
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mealory</p>
+  </footer>
+</body>
+</html>
